@@ -15,7 +15,6 @@ const counselorsTrashRoute = require('./routes/counselorsTrashRoute')
 // setting time zone
 process.env.TZ = env.TZ;
 // db connection 
-
 if (process.env.NODE_ENV === 'production') {
     //*Set static folder up in production
     app.use(express.static('client/build'));
