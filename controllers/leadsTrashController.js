@@ -1,5 +1,5 @@
 const leadTrashModel = require('../models/LeadTrash');
-const leadModel = require('../models/lead');
+const leadModel = require('../models/Lead');
 
 const moveToTrash = async(req, res) => {
     try {

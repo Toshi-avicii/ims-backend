@@ -1,5 +1,5 @@
 const userModel = require("../models/Users");
-const leadModel = require("../models/lead");
+const leadModel = require("../models/Lead");
 const { validationResult } = require("express-validator");
 const sendMail = require('../config/sendMail');
 
