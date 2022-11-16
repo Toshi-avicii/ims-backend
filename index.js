@@ -29,7 +29,7 @@ app.use("/api/leads", leadsRoute);
 app.use("/api/leads/trash", leadsTrashRoute);
 app.use("/api/counselors/trash", counselorsTrashRoute);
 
-const port = env.PORT || 6000;
+const port = process.env.PORT || 6000;
 app.listen(port, () => {
     console.log(`Git Server is running on port ${port}`);
 });
