@@ -1,12 +1,12 @@
 const express = require('express');
-const mainUserRoute = express.Router();
+const adminRoute = express.Router();
 const { adminMiddleware } = require('../middleWares/userMiddleware');
 const { adminProfile } = require('../controllers/adminController.js');
 const authenticateAdminToken = require('../middleWares/authenticateToken');
 
-mainUserRoute
+adminRoute
 .get("/profile", adminMiddleware, authenticateAdminToken, adminProfile)
 // .patch("/profile", adminMiddleware, updateAdmin)
 // .post("/profile", adminMiddleware, createAdmin)
 
-module.exports = mainUserRoute;
+module.exports = adminRoute;
